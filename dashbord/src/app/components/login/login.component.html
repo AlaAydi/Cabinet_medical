@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="row min-vh-100">
+    
+    <div class="col-5 bg-primary d-flex flex-column align-items-center justify-content-center text-white p-4">
+      <div class="text-center" style="line-height: 1.3;">
+        <p style="font-size: 25px; font-weight: 300;">Doctor</p>
+        <h1 style="font-size: 48px; font-weight: 300;" class="text-uppercase">Gestion</h1>
+        <p style="font-size: 34px; font-weight: 300;">Right at your fingertips</p>
+      </div>
+      <div class="mt-5">
+        <img src="https://demo.paymoney.techvill.net/public/frontend/templates/images/login/signin-static.svg" alt="Illustration" class="img-fluid">
+      </div>
+    </div>
+    
+    <!-- Right side : Login form -->
+    <div class="col-7 d-flex flex-column justify-content-center align-items-center p-5">
+      <div class="mb-4 text-center">
+        <p class="mb-1">< Back</p>
+        <h2 class="mb-2">Sign In</h2>
+        <p>Don't have an account? <a href="#" class="text-primary">Sign up here</a></p>
+      </div>
+      
+      <form [formGroup]="loginForm" class="w-50">
+      
+        <div class="mb-3">
+          <label for="email" class="form-label" style="font-size: 20px;">Email Address</label>
+          <input id="email" type="text" formControlName="username" class="form-control mt-2" placeholder="Your Email" required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="password" class="form-label" style="font-size: 20px;">Password</label>
+          <input id="password" type="password" formControlName="password" class="form-control mt-2" placeholder="Password" required>
+        </div>
+        
+        <div class="text-end mb-3">
+          <a href="#" class="text-primary">Forgot Password?</a>
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-100 py-2 mb-4">Login</button>
+        
+        <hr>
+        <p class="text-center mb-3">Sign in with demo account</p>
+        
+        <div class="d-flex justify-content-center gap-2">
+          <button type="button" class="btn btn-outline-primary " >Patient</button>
+          <button type="button" class="btn btn-outline-primary">Secrétaire</button>
+          <button type="button" class="btn btn-outline-primary">Admin</button>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</div>
