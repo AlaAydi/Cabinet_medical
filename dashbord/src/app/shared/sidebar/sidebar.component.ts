@@ -22,12 +22,10 @@ activities = [
   { name: 'Patients', icon: 'fa-solid fa-hospital-user', route: '/admin/patients' },
   { name: 'Services médicaux', icon: 'fa-solid fa-stethoscope', route: '/admin/services' },
   { name: 'Paiements', icon: 'fa-solid fa-credit-card', route: '/admin/payments' },
-  { name: 'Statistiques', icon: 'fa-solid fa-chart-pie', route: '/admin/statistics' }
 ];
 
 others = [
   { name: 'Paramètres', icon: 'fa-solid fa-gear', route: '/admin/settings' },
-  { name: 'Support', icon: 'fa-solid fa-headset', route: '/admin/support' },
   { name: 'Profil Admin', icon: 'fa-solid fa-user-shield', route: '/admin/profile' },
   { name: 'Déconnexion', icon: 'fa-solid fa-right-from-bracket', route: '/logout' }
 ];
