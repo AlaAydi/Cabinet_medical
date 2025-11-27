@@ -1,21 +1,33 @@
 <div class="sidebar">
   <h3 class="sidebar-title">ADMIN PANEL</h3>
+
   <ul>
-    <li *ngFor="let item of menuItems" [routerLink]="item.route" class="menu-item">
+    <li *ngFor="let item of menuItems"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        class="menu-item">
       <i [class]="item.icon"></i>
-      <span>{{item.name}}</span>
+      <span>{{ item.name }}</span>
     </li>
 
     <li class="section-title">ACTIVITIES</li>
-    <li *ngFor="let item of activities" [routerLink]="item.route" class="menu-item">
+
+    <li *ngFor="let item of activities"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        class="menu-item">
       <i [class]="item.icon"></i>
-      <span>{{item.name}}</span>
+      <span>{{ item.name }}</span>
     </li>
 
     <li class="section-title">OTHERS</li>
-    <li *ngFor="let item of others" [routerLink]="item.route" class="menu-item">
+
+    <li *ngFor="let item of others"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        class="menu-item">
       <i [class]="item.icon"></i>
-      <span>{{item.name}}</span>
+      <span>{{ item.name }}</span>
     </li>
   </ul>
 </div>

@@ -1,59 +1,80 @@
 .sidebar {
-    width: 300px;
-    height: 100vh;
-    padding: 20px;
-    background: linear-gradient(to right, #021B79, #0575E6);
-    position: fixed;
-    overflow-y: auto;
+  width: 300px;
+  background: linear-gradient(to bottom, #034ea2, #0575e6);
+  color: white;
+  min-height: 100vh;
+  padding: 20px 15px;
+  transition: width 0.3s ease, transform 0.3s ease;
 }
+
+.sidebar.collapsed {
+  width: 70px;
+
+  .menu-item span,
+  .section-title {
+    display: none;
+  }
+}
+
+
 
 .sidebar-title {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 22px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f4d03f;
+  padding-left: 5px;
 }
 
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
-
-.sidebar .section-title {
-    color: #FFD700; 
-    font-size: 10px;
-    font-weight: bold;
-    margin: 15px 0 5px 0;
-    padding-left: 5px;
-    letter-spacing: 1px;
+.menu-item i {
+  font-size: 18px;
+  margin-right: 10px;
 }
 
-
-.sidebar .menu-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 15px;
-    margin: 4px 0;
-    color: #c1bfdf;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: 0.2s ease;
+.menu-item:hover,
+.menu-item.active {
+  background: white;
+  color: #034ea2;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-
-.sidebar .menu-item:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.menu-item:hover i,
+.menu-item.active i {
+  color: #034ea2;
 }
 
-
-.sidebar .menu-item i {
-    font-size: 16px;
-    width: 20px;
-    text-align: center;
-}
+.home-icon { color: #ff9800 !important; }
+.modules-icon { color: #4caf50 !important; }
+.reservations-icon { color: #2196f3 !important; }
+.instructeurs-icon { color: #9c27b0 !important; }
+.avis-icon { color: #ff5722 !important; }
+.logout-icon { color: #f44336 !important; }

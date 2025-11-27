@@ -1,22 +1,50 @@
 <div class="navbar">
   <div class="nav-left"></div>
   <div class="nav-right">
-    <button class="dark_toggle" (click)='toggleDarkMode ()'>
-
+    
+    <button class="dark_toggle" (click)="toggleDarkMode()">
       <i class="fa" [ngClass]="isDark ? 'fa-sun' : 'fa-moon'"> </i>
     </button>
 
-    <div class="profile">
-    
-    <div class="profile-cercle">A  </div>
-    
-        <span class ="profile-name">Ala</span>
+    <div class="profile" (click)="toggleDropDown()">
 
-  
+      <div class="profile-cercle">A</div>
+      <span class="profile-name">Ala</span>
+
+      <div class="dropdown_menu" [class.show]="dropdownOpen">
+        
+        <div class="userInfo d-flex align-items-center gap-2">
+
+          <div>
+            <p class="user_name mb-0">Ala Aydi</p>
+            <p class="user_email mb-0">aydi&#64;gmail.com</p>
+
+            <a href="#" class="dropdown-item">
+              <i class="fa fa-user me-2"></i> View Profile
+            </a>
+
+            <a href="#" class="dropdown-item">
+              <i class="fa fa-wallet me-2"></i> Check Wallet
+            </a>
+
+            <a href="#" class="dropdown-item">
+              <i class="fa fa-check-circle me-2"></i> Verifications
+            </a>
+
+            <a href="#" class="dropdown-item">
+              <i class="fa fa-share-square me-2"></i> Share PayMe Request
+            </a>
+
+            <a href="#" class="dropdown-item logout">
+              <i class="fa fa-sign-out-alt me-2"></i> Logout
+            </a>
+
+          </div>
+        </div>
+
+      </div>
 
     </div>
 
   </div>
-
-
 </div>

@@ -9,9 +9,15 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  isDark :boolean = false ; 
-  toggleDarkMode () {
-    this.isDark = !this.isDark ; 
+  
+  isDark: boolean = false;
+  dropdownOpen = false;
+
+  toggleDarkMode() {
+    this.isDark = !this.isDark;
   }
 
+  toggleDropDown() {
+    this.dropdownOpen = !this.dropdownOpen;
+  }
 }
