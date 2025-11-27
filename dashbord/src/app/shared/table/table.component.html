@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>Date</th>
+      <th>Heure</th>
+      <th>Type</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let a of appointments">
+      <td>{{ a.name }}</td>
+      <td>{{ a.date }}</td>
+      <td>{{ a.time }}</td>
+      <td>{{ a.type }}</td>
+      <td>
+        <span class="status" [ngClass]="a.status.toLowerCase()">{{ a.status }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>

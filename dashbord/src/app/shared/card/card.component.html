@@ -1,0 +1,9 @@
+<div class=" cards">
+  <div class="card" *ngFor="let s of stats">
+    <i class="{{ s.icon }}" [style.color]="s.color"></i>
+    <div>
+      <h3>{{ s.value }}</h3>
+      <p>{{ s.label }}</p>
+    </div>
+  </div>
+</div>

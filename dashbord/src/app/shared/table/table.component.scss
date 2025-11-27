@@ -1,0 +1,22 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: #0097b2;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.status.confirmé { color: #4caf50; }
+.status.en\ attente { color: #ff9800; }
+.status.annulé { color: #f44336; }
